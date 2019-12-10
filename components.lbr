@@ -1,0 +1,779 @@
+Success(<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>eagle-lbr/components.lbr at 45cc14d90e652f2d43da9b014615283a78bc405a - kalle/eagle-lbr</title>
+    <meta property="og:title" content="eagle-lbr/components.lbr at 45cc14d90e652f2d43da9b014615283a78bc405a - kalle/eagle-lbr" />
+    <meta property="og:type" content="object" />
+    <meta property="og:url" content="http://gitbucket.pgollor.de/kalle/eagle-lbr/blob/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr" />
+    
+    
+      <meta property="og:image" content="https://gitbucket.pgollor.de/kalle/_avatar" />
+      
+    
+    <link rel="icon" href="https://gitbucket.pgollor.de/assets/common/images/gitbucket.png?20191117154532" type="image/vnd.microsoft.icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/google-fonts/css/source-sans-pro.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/bootstrap-3.3.7/css/bootstrap.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/octicons-4.4.0/octicons.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/bootstrap-datetimepicker-4.17.44/css/bootstrap-datetimepicker.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/colorpicker/css/bootstrap-colorpicker.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/google-code-prettify/prettify.css?20191117154532" type="text/css" rel="stylesheet"/>
+    <link href="https://gitbucket.pgollor.de/assets/vendors/facebox/facebox.css?20191117154532" rel="stylesheet"/>
+    <link href="https://gitbucket.pgollor.de/assets/vendors/AdminLTE-2.4.2/css/AdminLTE.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/AdminLTE-2.4.2/css/skins/skin-blue.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/font-awesome-4.7.0/css/font-awesome.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/jquery-ui/jquery-ui.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/jquery-ui/jquery-ui.structure.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/vendors/jquery-ui/jquery-ui.theme.min.css?20191117154532" rel="stylesheet">
+    <link href="https://gitbucket.pgollor.de/assets/common/css/gitbucket.css?20191117154532" rel="stylesheet">
+    <script src="https://gitbucket.pgollor.de/assets/vendors/jquery/jquery-3.2.1.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/jquery-ui/jquery-ui.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/dropzone/dropzone.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/common/js/validation.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/common/js/gitbucket.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/bootstrap-3.3.7/js/bootstrap.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/bootstrap3-typeahead/bootstrap3-typeahead.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/bootstrap-datetimepicker-4.17.44/js/moment.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/bootstrap-datetimepicker-4.17.44/js/bootstrap-datetimepicker.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/colorpicker/js/bootstrap-colorpicker.min.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/google-code-prettify/prettify.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/elastic/jquery.elastic.source.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/facebox/facebox.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/jquery-hotkeys/jquery.hotkeys.js?20191117154532"></script>
+    <script src="https://gitbucket.pgollor.de/assets/vendors/jquery-textcomplete-1.8.4/jquery.textcomplete.min.js?20191117154532"></script>
+    
+      <meta name="go-import" content="gitbucket.pgollor.de/kalle/eagle-lbr git https://gitbucket.pgollor.de/git/kalle/eagle-lbr.git" />
+    
+    <script src="https://gitbucket.pgollor.de/assets/vendors/AdminLTE-2.4.2/js/adminlte.min.js?20191117154532" type="text/javascript"></script>
+  </head>
+  <body class="skin-blue page-load sidebar-mini ">
+    <div class="wrapper">
+      <header class="main-header">
+        <a href="https://gitbucket.pgollor.de/" class="logo">
+          <span class="logo-mini"><img src="https://gitbucket.pgollor.de/assets/common/images/gitbucket.svg?20191117154532" alt="GitBucket" /></span>
+          <span class="logo-lg">
+            <img src="https://gitbucket.pgollor.de/assets/common/images/gitbucket.svg?20191117154532" alt="GitBucket" />
+            <span class="header-title strong">GitBucket</span>
+          </span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+              <span class="sr-only">Toggle navigation</span>
+            </a>
+          
+          <form id="search" action="https://gitbucket.pgollor.de/search" method="GET" class="pc navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" name="query" id="navbar-search-input" class="form-control" placeholder="Search repository"/>
+            </div>
+          </form>
+          <ul class="pc nav navbar-nav">
+            
+            
+              
+                <li><a href="https://gitbucket.pgollor.de/gist">Snippets</a></li>
+              
+            
+          </ul>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              
+                <li>
+                  <a href="https://gitbucket.pgollor.de/signin?redirect=%2Fkalle%2Feagle-lbr%2Fblob%2F45cc14d90e652f2d43da9b014615283a78bc405a%2Fcomponents.lbr" class="pull-right" id="signin">Sign in</a>
+                </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+  
+
+
+<div class="main-sidebar">
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      
+  <li class = "menu-item-hover active">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr">
+        <i class="menu-icon octicon octicon-code"></i>
+        <span>Files</span>
+        
+      </a>
+    
+  </li>
+
+      
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/branches">
+        <i class="menu-icon octicon octicon-git-branch"></i>
+        <span>Branches</span>
+        
+          <span class="pull-right-container"><span class="label label-primary pull-right">1</span></span>
+        
+      </a>
+    
+  </li>
+
+      
+      
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/releases">
+        <i class="menu-icon octicon octicon-tag"></i>
+        <span>Releases</span>
+        
+      </a>
+    
+  </li>
+
+      
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/issues">
+        <i class="menu-icon octicon octicon-issue-opened"></i>
+        <span>Issues</span>
+        
+      </a>
+    
+  </li>
+
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/pulls">
+        <i class="menu-icon octicon octicon-git-pull-request"></i>
+        <span>Pull requests</span>
+        
+      </a>
+    
+  </li>
+
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/issues/labels">
+        <i class="menu-icon octicon octicon-tag"></i>
+        <span>Labels</span>
+        
+      </a>
+    
+  </li>
+
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/issues/priorities">
+        <i class="menu-icon octicon octicon-flame"></i>
+        <span>Priorities</span>
+        
+      </a>
+    
+  </li>
+
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/issues/milestones">
+        <i class="menu-icon octicon octicon-milestone"></i>
+        <span>Milestones</span>
+        
+      </a>
+    
+  </li>
+
+      
+      
+        
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/wiki">
+        <i class="menu-icon octicon octicon-book"></i>
+        <span>Wiki</span>
+        
+      </a>
+    
+  </li>
+
+      
+      
+      
+        
+          
+  <li class = "menu-item-hover ">
+    
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/mirrors">
+        <i class="menu-icon octicon octicon-mirror"></i>
+        <span>Mirrors</span>
+        
+      </a>
+    
+  </li>
+
+        
+      
+    </ul>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="content body clearfix">
+    <div class="headbar">
+      <div class="container">
+        
+
+        
+        <div class="head">
+          <div class="pull-right">
+            
+              
+            
+            
+              
+                <a class="btn btn-default btn-sm" href="https://gitbucket.pgollor.de/signin?redirect=https%3A%2F%2Fgitbucket.pgollor.de%2Fkalle%2Feagle-lbr">
+                  <span class="strong"><i class="octicon octicon-repo-forked"></i>Fork</span><span class="muted">: 1</span>
+                </a>
+              
+            
+            <form id="fork-form" method="post" action="https://gitbucket.pgollor.de/kalle/eagle-lbr/fork" style="display: none;">
+              <input type="hidden" name="account" value=""/>
+            </form>
+          </div>
+          
+  
+    <i class="mega-octicon octicon-repo"></i>
+  
+
+
+          <a href="https://gitbucket.pgollor.de/kalle">kalle</a> / <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr" class="strong">eagle-lbr</a>
+
+          
+            
+          
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      .prettyprint {
+        tab-size: 8
+      }
+    </style>
+    <div class="head">
+      <div class="pull-right hide-if-blame"><div class="btn-group">
+        <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/blob/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr" data-hotkey="y" style="display: none;">Transfer to URL with SHA</a>
+        <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/find/45cc14d90e652f2d43da9b014615283a78bc405a" class="btn btn-sm btn-default" data-hotkey="t">Find file</a>
+      </div></div>
+      <div class="line-age-legend">
+        <span>Newer</span>
+        <ol>
+            <li class="heat1"></li>
+            <li class="heat2"></li>
+            <li class="heat3"></li>
+            <li class="heat4"></li>
+            <li class="heat5"></li>
+            <li class="heat6"></li>
+            <li class="heat7"></li>
+            <li class="heat8"></li>
+            <li class="heat9"></li>
+            <li class="heat10"></li>
+        </ol>
+        <span>Older</span>
+      </div>
+      <div id="branchCtrlWrapper" style="display:inline;">
+      
+  <div class="btn-group" >
+    <button id = "test"
+        class="dropdown-toggle btn btn-default btn-sm" data-toggle="dropdown">
+      
+        
+          <span class="muted">tree:</span>
+        
+        <span class="strong"
+              style="display:inline-block; vertical-align:bottom; overflow-x:hidden; max-width:200px; text-overflow:ellipsis">
+          45cc14d90e
+        </span>
+      
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      
+      
+  <li><div id="branch-control-title">Switch branches<button id="branch-control-close" class="pull-right">&times</button></div></li>
+  <li><input id="branch-control-input" type="text" class="form-control input-sm dropdown-filter-input" placeholder="Find or create branch ..."/></li>
+  
+        
+          <li><a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/blob/master/components.lbr">
+  <i class="octicon"></i>
+ master</a></li>
+        
+      
+  
+
+    </ul>
+  </div>
+  
+
+
+<script>
+  $(function(){
+    $('#branch-control-input').parent().click(function(e) {
+      e.stopPropagation();
+    });
+    $('#branch-control-close').click(function() {
+      $('[data-toggle="dropdown"]').parent().removeClass('open');
+    });
+    $('#branch-control-input').keyup(function() {
+      var inputVal = $('#branch-control-input').val();
+      $.each($('#branch-control-input').parent().parent().find('a'), function(index, elem) {
+        if (!inputVal || !elem.text.trim() || elem.text.trim().toLowerCase().indexOf(inputVal.toLowerCase()) >= 0) {
+          $(elem).parent().show();
+        } else {
+          $(elem).parent().hide();
+        }
+      });
+      
+    });
+    
+    $('.btn-group').click(function() {
+      $('#branch-control-input').val('');
+      $('.dropdown-menu li').show();
+      $('#create-branch').hide();
+    });
+  });
+</script>
+
+      </div>
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/tree/45cc14d90e652f2d43da9b014615283a78bc405a">eagle-lbr</a> /
+      
+        
+          components.lbr
+        
+      
+      
+    </div>
+    <div class="box-header" style="line-height: 28px;">
+      <a href="https://gitbucket.pgollor.de/kalle" class=""><img src="https://www.gravatar.com/avatar/1b0b6a25893aecac56fdac0aa72d6b75?s=20&d=retro&r=g" class="avatar-mini" style="width: 20px; height: 20px;" /></a>
+      <a href="https://gitbucket.pgollor.de/kalle" class="username strong">Pascal Gollor</a>
+      <span class="muted"><span data-toggle="tooltip" title="2018-11-02 11:31:53">
+  
+    on 2 Nov 2018
+  
+</span>
+</span>
+      <span class="label label-default">9 KB</span>
+      <a href="https://gitbucket.pgollor.de/kalle/eagle-lbr/commit/45cc14d90e652f2d43da9b014615283a78bc405a" class="commit-message">add supression filter</a>
+      <div class="btn-group pull-right">
+        <a class="btn btn-sm btn-default" href="https://gitbucket.pgollor.de/kalle/eagle-lbr/raw/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr">Raw</a>
+        
+          <a class="btn btn-sm btn-default blame-action" href="https://gitbucket.pgollor.de/kalle/eagle-lbr/blame/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr"
+            data-url="https://gitbucket.pgollor.de/kalle/eagle-lbr/get-blame/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr" data-repository="https://gitbucket.pgollor.de/kalle/eagle-lbr">Blame</a>
+        
+        <a class="btn btn-sm btn-default" href="https://gitbucket.pgollor.de/kalle/eagle-lbr/commits/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr">History</a>
+        
+        
+      </div>
+    </div>
+    
+      
+        
+          <div class="box-content-bottom">
+            <pre class="prettyprint linenums blob  no-renderable  ">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE eagle SYSTEM &quot;eagle.dtd&quot;&gt;
+&lt;eagle version=&quot;9.2.2&quot;&gt;
+&lt;drawing&gt;
+&lt;settings&gt;
+&lt;setting alwaysvectorfont=&quot;no&quot;/&gt;
+&lt;setting keepoldvectorfont=&quot;yes&quot;/&gt;
+&lt;setting verticaltext=&quot;up&quot;/&gt;
+&lt;/settings&gt;
+&lt;grid distance=&quot;0.1&quot; unitdist=&quot;inch&quot; unit=&quot;inch&quot; style=&quot;lines&quot; multiple=&quot;1&quot; display=&quot;no&quot; altdistance=&quot;0.01&quot; altunitdist=&quot;inch&quot; altunit=&quot;inch&quot;/&gt;
+&lt;layers&gt;
+&lt;layer number=&quot;1&quot; name=&quot;Top&quot; color=&quot;4&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;2&quot; name=&quot;Route2&quot; color=&quot;1&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;3&quot; name=&quot;Route3&quot; color=&quot;4&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;4&quot; name=&quot;Route4&quot; color=&quot;1&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;5&quot; name=&quot;Route5&quot; color=&quot;4&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;6&quot; name=&quot;Route6&quot; color=&quot;1&quot; fill=&quot;8&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;7&quot; name=&quot;Route7&quot; color=&quot;4&quot; fill=&quot;8&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;8&quot; name=&quot;Route8&quot; color=&quot;1&quot; fill=&quot;2&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;9&quot; name=&quot;Route9&quot; color=&quot;4&quot; fill=&quot;2&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;10&quot; name=&quot;Route10&quot; color=&quot;1&quot; fill=&quot;7&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;11&quot; name=&quot;Route11&quot; color=&quot;4&quot; fill=&quot;7&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;12&quot; name=&quot;Route12&quot; color=&quot;1&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;13&quot; name=&quot;Route13&quot; color=&quot;4&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;14&quot; name=&quot;Route14&quot; color=&quot;1&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;15&quot; name=&quot;Route15&quot; color=&quot;4&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;no&quot;/&gt;
+&lt;layer number=&quot;16&quot; name=&quot;Bottom&quot; color=&quot;1&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;17&quot; name=&quot;Pads&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;18&quot; name=&quot;Vias&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;19&quot; name=&quot;Unrouted&quot; color=&quot;6&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;20&quot; name=&quot;Dimension&quot; color=&quot;15&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;21&quot; name=&quot;tPlace&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;22&quot; name=&quot;bPlace&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;23&quot; name=&quot;tOrigins&quot; color=&quot;15&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;24&quot; name=&quot;bOrigins&quot; color=&quot;15&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;25&quot; name=&quot;tNames&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;26&quot; name=&quot;bNames&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;27&quot; name=&quot;tValues&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;28&quot; name=&quot;bValues&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;29&quot; name=&quot;tStop&quot; color=&quot;7&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;30&quot; name=&quot;bStop&quot; color=&quot;7&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;31&quot; name=&quot;tCream&quot; color=&quot;7&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;32&quot; name=&quot;bCream&quot; color=&quot;7&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;33&quot; name=&quot;tFinish&quot; color=&quot;6&quot; fill=&quot;3&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;34&quot; name=&quot;bFinish&quot; color=&quot;6&quot; fill=&quot;6&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;35&quot; name=&quot;tGlue&quot; color=&quot;7&quot; fill=&quot;4&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;36&quot; name=&quot;bGlue&quot; color=&quot;7&quot; fill=&quot;5&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;37&quot; name=&quot;tTest&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;38&quot; name=&quot;bTest&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;39&quot; name=&quot;tKeepout&quot; color=&quot;4&quot; fill=&quot;11&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;40&quot; name=&quot;bKeepout&quot; color=&quot;1&quot; fill=&quot;11&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;41&quot; name=&quot;tRestrict&quot; color=&quot;4&quot; fill=&quot;10&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;42&quot; name=&quot;bRestrict&quot; color=&quot;1&quot; fill=&quot;10&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;43&quot; name=&quot;vRestrict&quot; color=&quot;2&quot; fill=&quot;10&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;44&quot; name=&quot;Drills&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;45&quot; name=&quot;Holes&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;46&quot; name=&quot;Milling&quot; color=&quot;3&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;47&quot; name=&quot;Measures&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;48&quot; name=&quot;Document&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;49&quot; name=&quot;Reference&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;51&quot; name=&quot;tDocu&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;52&quot; name=&quot;bDocu&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;91&quot; name=&quot;Nets&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;92&quot; name=&quot;Busses&quot; color=&quot;1&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;93&quot; name=&quot;Pins&quot; color=&quot;2&quot; fill=&quot;1&quot; visible=&quot;no&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;94&quot; name=&quot;Symbols&quot; color=&quot;4&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;95&quot; name=&quot;Names&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;96&quot; name=&quot;Values&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;97&quot; name=&quot;Info&quot; color=&quot;7&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;98&quot; name=&quot;Guide&quot; color=&quot;6&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;layer number=&quot;99&quot; name=&quot;SpiceOrder&quot; color=&quot;5&quot; fill=&quot;1&quot; visible=&quot;yes&quot; active=&quot;yes&quot;/&gt;
+&lt;/layers&gt;
+&lt;library&gt;
+&lt;packages&gt;
+&lt;package name=&quot;0805&quot;&gt;
+&lt;description&gt;&amp;lt;b&amp;gt;Suppression Filter SMD0805&amp;lt;/b&amp;gt;&amp;lt;p&amp;gt;
+chip&lt;/description&gt;
+&lt;wire x1=&quot;-0.41&quot; y1=&quot;0.635&quot; x2=&quot;0.41&quot; y2=&quot;0.635&quot; width=&quot;0.1524&quot; layer=&quot;51&quot;/&gt;
+&lt;wire x1=&quot;-0.41&quot; y1=&quot;-0.635&quot; x2=&quot;0.41&quot; y2=&quot;-0.635&quot; width=&quot;0.1524&quot; layer=&quot;51&quot;/&gt;
+&lt;wire x1=&quot;-1.973&quot; y1=&quot;0.983&quot; x2=&quot;1.973&quot; y2=&quot;0.983&quot; width=&quot;0.0508&quot; layer=&quot;39&quot;/&gt;
+&lt;wire x1=&quot;1.973&quot; y1=&quot;0.983&quot; x2=&quot;1.973&quot; y2=&quot;-0.983&quot; width=&quot;0.0508&quot; layer=&quot;39&quot;/&gt;
+&lt;wire x1=&quot;1.973&quot; y1=&quot;-0.983&quot; x2=&quot;-1.973&quot; y2=&quot;-0.983&quot; width=&quot;0.0508&quot; layer=&quot;39&quot;/&gt;
+&lt;wire x1=&quot;-1.973&quot; y1=&quot;-0.983&quot; x2=&quot;-1.973&quot; y2=&quot;0.983&quot; width=&quot;0.0508&quot; layer=&quot;39&quot;/&gt;
+&lt;smd name=&quot;1&quot; x=&quot;-0.85&quot; y=&quot;0&quot; dx=&quot;1.3&quot; dy=&quot;1.5&quot; layer=&quot;1&quot;/&gt;
+&lt;smd name=&quot;2&quot; x=&quot;0.85&quot; y=&quot;0&quot; dx=&quot;1.3&quot; dy=&quot;1.5&quot; layer=&quot;1&quot;/&gt;
+&lt;text x=&quot;-0.762&quot; y=&quot;1.016&quot; size=&quot;1.27&quot; layer=&quot;25&quot; font=&quot;vector&quot; ratio=&quot;12&quot;&gt;&amp;gt;NAME&lt;/text&gt;
+&lt;text x=&quot;-0.762&quot; y=&quot;-2.286&quot; size=&quot;1.27&quot; layer=&quot;27&quot; font=&quot;vector&quot; ratio=&quot;12&quot;&gt;&amp;gt;VALUE&lt;/text&gt;
+&lt;rectangle x1=&quot;0.4064&quot; y1=&quot;-0.6985&quot; x2=&quot;1.0564&quot; y2=&quot;0.7015&quot; layer=&quot;51&quot;/&gt;
+&lt;rectangle x1=&quot;-1.0668&quot; y1=&quot;-0.6985&quot; x2=&quot;-0.4168&quot; y2=&quot;0.7015&quot; layer=&quot;51&quot;/&gt;
+&lt;rectangle x1=&quot;-0.1999&quot; y1=&quot;-0.5001&quot; x2=&quot;0.1999&quot; y2=&quot;0.5001&quot; layer=&quot;35&quot;/&gt;
+&lt;/package&gt;
+&lt;package name=&quot;0603&quot; urn=&quot;urn:adsk.eagle:footprint:23187/1&quot; locally_modified=&quot;yes&quot;&gt;
+&lt;description&gt;&amp;lt;b&amp;gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&amp;lt;/b&amp;gt;&amp;lt;p&amp;gt;
+Metric Code Size 1608&lt;/description&gt;
+&lt;wire x1=&quot;-0.725&quot; y1=&quot;0.35&quot; x2=&quot;0.725&quot; y2=&quot;0.35&quot; width=&quot;0.1016&quot; layer=&quot;51&quot;/&gt;
+&lt;wire x1=&quot;0.725&quot; y1=&quot;-0.35&quot; x2=&quot;-0.725&quot; y2=&quot;-0.35&quot; width=&quot;0.1016&quot; layer=&quot;51&quot;/&gt;
+&lt;smd name=&quot;1&quot; x=&quot;-0.875&quot; y=&quot;0&quot; dx=&quot;1.05&quot; dy=&quot;1.08&quot; layer=&quot;1&quot;/&gt;
+&lt;smd name=&quot;2&quot; x=&quot;0.875&quot; y=&quot;0&quot; dx=&quot;1.05&quot; dy=&quot;1.08&quot; layer=&quot;1&quot;/&gt;
+&lt;text x=&quot;-0.8&quot; y=&quot;0.65&quot; size=&quot;1.016&quot; layer=&quot;25&quot;&gt;&amp;gt;NAME&lt;/text&gt;
+&lt;text x=&quot;-0.8&quot; y=&quot;-1.65&quot; size=&quot;1.016&quot; layer=&quot;27&quot;&gt;&amp;gt;VALUE&lt;/text&gt;
+&lt;rectangle x1=&quot;-0.8&quot; y1=&quot;-0.4&quot; x2=&quot;-0.45&quot; y2=&quot;0.4&quot; layer=&quot;51&quot;/&gt;
+&lt;rectangle x1=&quot;0.45&quot; y1=&quot;-0.4&quot; x2=&quot;0.8&quot; y2=&quot;0.4&quot; layer=&quot;51&quot;/&gt;
+&lt;/package&gt;
+&lt;/packages&gt;
+&lt;packages3d&gt;
+&lt;package3d name=&quot;C0603K&quot; urn=&quot;urn:adsk.eagle:package:23680/2&quot; locally_modified=&quot;yes&quot; type=&quot;model&quot;&gt;
+&lt;description&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder
+Metric Code Size 1608&lt;/description&gt;
+&lt;packageinstances&gt;
+&lt;packageinstance name=&quot;0603&quot;/&gt;
+&lt;/packageinstances&gt;
+&lt;/package3d&gt;
+&lt;/packages3d&gt;
+&lt;symbols&gt;
+&lt;symbol name=&quot;L&quot;&gt;
+&lt;text x=&quot;-3.81&quot; y=&quot;1.3716&quot; size=&quot;1.778&quot; layer=&quot;95&quot; font=&quot;vector&quot; ratio=&quot;12&quot;&gt;&amp;gt;NAME&lt;/text&gt;
+&lt;text x=&quot;-3.81&quot; y=&quot;-2.921&quot; size=&quot;1.778&quot; layer=&quot;96&quot; font=&quot;vector&quot; ratio=&quot;12&quot;&gt;&amp;gt;VALUE&lt;/text&gt;
+&lt;rectangle x1=&quot;-2.54&quot; y1=&quot;-0.889&quot; x2=&quot;2.54&quot; y2=&quot;0.889&quot; layer=&quot;94&quot;/&gt;
+&lt;pin name=&quot;2&quot; x=&quot;5.08&quot; y=&quot;0&quot; visible=&quot;off&quot; length=&quot;short&quot; direction=&quot;pas&quot; swaplevel=&quot;1&quot; rot=&quot;R180&quot;/&gt;
+&lt;pin name=&quot;1&quot; x=&quot;-5.08&quot; y=&quot;0&quot; visible=&quot;off&quot; length=&quot;short&quot; direction=&quot;pas&quot; swaplevel=&quot;1&quot;/&gt;
+&lt;/symbol&gt;
+&lt;/symbols&gt;
+&lt;devicesets&gt;
+&lt;deviceset name=&quot;BLM21PG221&quot; prefix=&quot;L&quot;&gt;
+&lt;description&gt;&amp;lt;b&amp;gt;BLM21PG 221&amp;lt;/b&amp;gt;&amp;lt;p&amp;gt;
+EMI Suppression Filter SMD0805 BLM21 220 Ohm&lt;/description&gt;
+&lt;gates&gt;
+&lt;gate name=&quot;G$1&quot; symbol=&quot;L&quot; x=&quot;0&quot; y=&quot;0&quot;/&gt;
+&lt;/gates&gt;
+&lt;devices&gt;
+&lt;device name=&quot;0805&quot; package=&quot;0805&quot;&gt;
+&lt;connects&gt;
+&lt;connect gate=&quot;G$1&quot; pin=&quot;1&quot; pad=&quot;1&quot;/&gt;
+&lt;connect gate=&quot;G$1&quot; pin=&quot;2&quot; pad=&quot;2&quot;/&gt;
+&lt;/connects&gt;
+&lt;technologies&gt;
+&lt;technology name=&quot;&quot;/&gt;
+&lt;/technologies&gt;
+&lt;/device&gt;
+&lt;/devices&gt;
+&lt;/deviceset&gt;
+&lt;deviceset name=&quot;BLM18AG601&quot; prefix=&quot;L&quot;&gt;
+&lt;description&gt;&amp;lt;b&amp;gt;BLM18AG 601&amp;lt;/b&amp;gt;&amp;lt;p&amp;gt;
+EMI Suppression Filter SMD0603 BLM18AG 600 Ohm
+&amp;lt;br&amp;gt;Impedanz (100 MHz): 600 Ohm / ±25%
+&amp;lt;br&amp;gt;Widerstand (DC) max.: 0,38 Ohm
+&amp;lt;br&amp;gt;Nennstrom: 0,5 A&lt;/description&gt;
+&lt;gates&gt;
+&lt;gate name=&quot;G$1&quot; symbol=&quot;L&quot; x=&quot;0&quot; y=&quot;0&quot;/&gt;
+&lt;/gates&gt;
+&lt;devices&gt;
+&lt;device name=&quot;&quot; package=&quot;0603&quot;&gt;
+&lt;connects&gt;
+&lt;connect gate=&quot;G$1&quot; pin=&quot;1&quot; pad=&quot;1&quot;/&gt;
+&lt;connect gate=&quot;G$1&quot; pin=&quot;2&quot; pad=&quot;2&quot;/&gt;
+&lt;/connects&gt;
+&lt;package3dinstances&gt;
+&lt;package3dinstance package3d_urn=&quot;urn:adsk.eagle:package:23680/2&quot;/&gt;
+&lt;/package3dinstances&gt;
+&lt;technologies&gt;
+&lt;technology name=&quot;&quot;/&gt;
+&lt;/technologies&gt;
+&lt;/device&gt;
+&lt;/devices&gt;
+&lt;/deviceset&gt;
+&lt;/devicesets&gt;
+&lt;/library&gt;
+&lt;/drawing&gt;
+&lt;compatibility&gt;
+&lt;note version=&quot;8.3&quot; severity=&quot;warning&quot;&gt;
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+&lt;/note&gt;
+&lt;note version=&quot;8.3&quot; severity=&quot;warning&quot;&gt;
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+&lt;/note&gt;
+&lt;/compatibility&gt;
+&lt;/eagle&gt;
+</pre>
+          </div>
+        
+        
+        
+      
+    
+  
+  </div>
+</div>
+<script>
+$(function(){
+  $('a[rel*=facebox]').facebox({
+    'loadingImage': 'https://gitbucket.pgollor.de/assets/vendors/facebox/loading.gif?20191117154532',
+    'closeImage': 'https://gitbucket.pgollor.de/assets/vendors/facebox/closelabel.png?20191117154532'
+  });
+
+  $(document).on("click", ".js-fork-owner-select-target", function() {
+    var account = $(this).text().replace("@", "");
+    $("#account").val(account);
+    $("#fork").submit();
+  });
+});
+</script>
+
+
+
+
+    </div>
+    <script>
+      $(function(){
+        
+        
+          $(".sidebar-toggle").on('click', function(e){
+            $.post('https://gitbucket.pgollor.de/sidebar-collapse', { collapse: !$('body').hasClass('sidebar-collapse') });
+          });
+        
+      });
+    </script>
+    
+      <script>
+        
+</script>
+<script>
+  var link = document.createElement('link');
+  link.setAttribute('rel', 'stylesheet');
+  link.setAttribute('type', 'text/css');
+  link.setAttribute('href', 'https://gitbucket.pgollor.de/plugin-assets/explorer/plugin-explorer.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+<script src="https://gitbucket.pgollor.de/plugin-assets/explorer/bundle.js"></script>
+<script>
+       
+      </script>
+    
+  </body>
+</html>
+
+<script>
+$(window).on('load', function(){
+  updateHighlighting();
+
+  window.onhashchange = function(){
+    updateHighlighting();
+  }
+
+  var pre = $('pre.prettyprint');
+  function updateSourceLineNum(){
+    $('.source-line-num').remove();
+    var pos = pre.find('ol.linenums').position();
+    if(pos){
+      $('<div class="source-line-num">').css({
+        height  : pre.height(),
+        width   : '48px',
+        cursor  : 'pointer',
+        position: 'absolute',
+        top     : pos.top + 'px',
+        left    : pos.left + 'px'
+      }).click(function(e){
+        var pos = $(this).data("pos");
+        if(!pos){
+          pos = $('ol.linenums li').map(function(){ return { id: $(this).attr("id"), top: $(this).position().top} }).toArray();
+          $(this).data("pos",pos);
+        }
+        for(var i = 0; i < pos.length-1; i++){
+          if(pos[i + 1].top > e.pageY){
+            break;
+          }
+        }
+        var line = pos[i].id.replace(/^L/,'');
+        var hash = location.hash;
+        var commitUrl = 'https://gitbucket.pgollor.de/kalle/eagle-lbr/blob/45cc14d90e652f2d43da9b014615283a78bc405a/components.lbr';
+        if(e.shiftKey == true && hash.match(/#L\d+(-L\d+)?/)){
+          var lines = hash.split('-');
+          window.history.pushState('', '', commitUrl + lines[0] + '-L' + line);
+        } else {
+          var p = $("#L"+line).attr('id',"");
+          window.history.pushState('', '', commitUrl + '#L' + line);
+          p.attr('id','L'+line);
+        }
+        $("#branchCtrlWrapper .btn .muted").text("tree:");
+        $("#branchCtrlWrapper .btn .strong").text("45cc14d90e");
+        updateHighlighting();
+      }).appendTo(pre);
+    }
+  }
+  var repository = $('.blame-action').data('repository');
+  $('.blame-action').click(function(e){
+    if(history.pushState && $('pre.prettyprint.no-renderable').length){
+      e.preventDefault();
+      history.pushState(null, null, this.href);
+      updateBlame();
+    }
+  });
+
+  function updateBlame(){
+    var m = /\/(blame|blob)(\/.*)$/.exec(location.href);
+    var mode = m[1];
+    $('.blame-action').toggleClass("active", mode=='blame').attr('href', repository + (m[1] == 'blame' ? '/blob' : '/blame') + m[2]);
+    if(pre.parents("div.box-content-bottom").find(".blame").length){
+      pre.parent().toggleClass("blame-container", mode == 'blame');
+      updateSourceLineNum();
+      return;
+    }
+    if(mode=='blob'){
+      updateSourceLineNum();
+      return;
+    }
+    $(document.body).toggleClass('no-box-shadow', document.body.style.boxShadow === undefined);
+    $('.blame-action').addClass("active");
+    var base = $('<div class="blame">').css({height: pre.height()}).prependTo(pre.parents("div.box-content-bottom"));
+    base.parent().addClass("blame-container");
+    updateSourceLineNum();
+    $.get($('.blame-action').data('url')).done(function(data){
+      var blame = data.blame;
+      var index = [];
+      for(var i = 0; i < blame.length; i++){
+        for(var j = 0; j < blame[i].lines.length; j++){
+          index[blame[i].lines[j]] = blame[i];
+        }
+      }
+      var blame, lastDiv, now = new Date().getTime();
+
+      $('pre.prettyprint ol.linenums li').each(function(i, e){
+        var p = $(e).position();
+        var h = $(e).height();
+        if(blame == index[i]){
+          lastDiv.css("min-height",(p.top + h + 1) - lastDiv.position().top);
+        } else {
+          $(e).addClass('blame-sep')
+          blame = index[i];
+          var sha = $('<div class="blame-sha">')
+             .append($('<a>').attr("href", data.root + '/commit/' + blame.id).text(blame.id.substr(0,7)));
+          if(blame.prev){
+             sha.append($('<br />'))
+             .append($('<a class="muted-link">').text('prev').attr("href", data.root + '/blame/' + blame.prev + '/' + (blame.prevPath || data.path)));
+          }
+          lastDiv = $('<div class="blame-info">')
+           .addClass('heat' + Math.min(10, Math.max(1, Math.ceil((now - blame.commited) / (24 * 3600 * 1000 * 70)))))
+           .toggleClass('blame-last', blame.id == data.last)
+           .data('line', (i + 1))
+           .css({
+             "top"        : p.top + 'px',
+             "min-height" : h + 'px'
+           })
+           .append(sha)
+           .append($(blame.avatar).addClass('avatar').css({"float": "left"}))
+           .append($('<div class="blame-commit-title">').text(blame.message))
+           .append($('<div class="muted">').html(blame.author + " authed " + blame.authed))
+           .appendTo(base);
+        }
+      });
+    });
+    return false;
+  };
+  $(document).on('expanded.pushMenu collapsed.pushMenu', function(e){
+    setTimeout(updateBlame, 300);
+  });
+  updateBlame();
+});
+
+var scrolling = false;
+
+/**
+ * Hightlight lines which are specified by URL hash.
+ */
+function updateHighlighting(){
+  var hash = location.hash;
+  if(hash.match(/#L\d+(-L\d+)?/)){
+    $('li.highlight').removeClass('highlight');
+    var lines = hash.substr(1).split('-');
+    if(lines.length == 1){
+      $('#' + lines[0]).addClass('highlight');
+      if(!scrolling){
+        $(window).scrollTop($('#' + lines[0]).offset().top - 40);
+      }
+    } else if(lines.length > 1){
+      var start = parseInt(lines[0].substr(1));
+      var end   = parseInt(lines[1].substr(1));
+      for(var i = start; i <= end; i++){
+        $('#L' + i).addClass('highlight');
+      }
+      if(!scrolling){
+        $(window).scrollTop($('#L' + start).offset().top - 40);
+      }
+    }
+    scrolling = true;
+  }
+}
+</script>
+)
